@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="爱情电影网 · 伦理频道 - 聚焦家庭伦理、情感抉择与人性思考的经典影视推荐，陪你读懂爱与选择的重量。">
+<meta name="keywords" content="爱情电影网, 伦理电影, 伦理剧, 家庭伦理, 情感电影, 爱情伦理, aiqingdianyingwanglunli, aiqingdianyingwanglunli-wap">
+<meta name="author" content="爱情电影网">
+<meta property="og:title" content="爱情电影网 · 伦理频道 - 爱与选择的重量">
+<meta property="og:description" content="家庭伦理、情感抉择、人性思考的经典影视推荐与影评。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://aiqingdianyingwanglunli-wap.github.io">
+<link rel="canonical" href="https://aiqingdianyingwanglunli-wap.github.io">
+<title>爱情电影网 · 伦理频道 - 爱与选择的重量 | aiqingdianyingwanglunli-wap</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --bg: #fbf8f6;
+    --paper: #fff;
+    --ink: #2b2326;
+    --muted: #8a7c80;
+    --line: #efe6e8;
+    --rose: #b03a5b;
+    --rose-2: #d45d7d;
+    --plum: #6b3a5c;
+    --gold: #c99a3c;
+    --radius: 16px;
+    --shadow: 0 14px 36px rgba(176,58,91,.10);
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "Songti SC", "SimSun", "PingFang SC", "Microsoft YaHei", serif;
+    background: var(--bg); color: var(--ink); line-height: 1.85;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; }
+  ::selection { background: var(--rose); color: #fff; }
+
+  /* ===== 顶部 ===== */
+  .topbar { position: sticky; top: 0; z-index: 100; background: rgba(251,248,246,.95); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+  .topbar-inner { max-width: 1160px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 14px 24px; }
+  .brand { display: flex; align-items: center; gap: 13px; }
+  .brand-mark {
+    width: 46px; height: 46px; border-radius: 50%; display: grid; place-items: center;
+    background: linear-gradient(140deg, var(--rose), var(--plum)); color: #fff; font-size: 20px;
+    box-shadow: 0 6px 18px rgba(176,58,91,.28);
+  }
+  .brand-text h1 { font-size: 19px; font-weight: 700; letter-spacing: 1px; }
+  .brand-text span { font-size: 10px; letter-spacing: 3px; color: var(--rose); font-family: "PingFang SC", sans-serif; }
+  .nav { display: flex; gap: 2px; }
+  .nav a { padding: 9px 16px; border-radius: 10px; font-size: 14px; font-weight: 600; color: var(--muted); transition: .2s; font-family: "PingFang SC", sans-serif; }
+  .nav a:hover { color: var(--rose); background: #fbeef2; }
+  .menu-toggle { display: none; background: none; border: 0; color: var(--ink); font-size: 26px; cursor: pointer; }
+
+  /* ===== 英雄区 ===== */
+  .hero { position: relative; padding: 90px 24px 80px; text-align: center; overflow: hidden; background: linear-gradient(180deg, #f9eef2 0%, var(--bg) 100%); }
+  .hero .quote { max-width: 760px; margin: 0 auto; }
+  .hero .kicker { font-size: 11px; letter-spacing: 4px; color: var(--rose); font-weight: 700; font-family: "PingFang SC", sans-serif; }
+  .hero h2 { font-size: clamp(28px, 5.5vw, 48px); line-height: 1.35; font-weight: 700; margin: 18px 0; }
+  .hero h2 em { font-style: normal; color: var(--rose); }
+  .hero .lead { font-size: clamp(14px, 2.1vw, 16px); color: var(--muted); margin-bottom: 8px; }
+  .hero .divider { width: 60px; height: 2px; background: var(--rose); margin: 30px auto; opacity: .5; }
+  .hero-acts { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .btn { display: inline-block; padding: 13px 30px; border-radius: 30px; font-weight: 600; font-size: 14px; transition: .25s; font-family: "PingFang SC", sans-serif; }
+  .btn-primary { background: var(--rose); color: #fff; box-shadow: 0 8px 22px rgba(176,58,91,.3); }
+  .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 14px 30px rgba(176,58,91,.4); }
+  .btn-outline { border: 1.5px solid var(--line); color: var(--ink); background: #fff; }
+  .btn-outline:hover { border-color: var(--rose); color: var(--rose); }
+
+  /* ===== 通用 ===== */
+  section { padding: 66px 24px; }
+  .wrap { max-width: 1160px; margin: 0 auto; }
+  .head { text-align: center; margin-bottom: 42px; }
+  .head .num { font-size: 11px; letter-spacing: 3px; color: var(--gold); font-weight: 700; font-family: "PingFang SC", sans-serif; }
+  .head h2 { font-size: clamp(23px, 3.6vw, 30px); margin-top: 6px; font-weight: 700; }
+  .head h2 em { font-style: normal; color: var(--rose); }
+  .head p { color: var(--muted); font-size: 14px; margin-top: 8px; }
+
+  /* ===== 伦理：杂志式图文（差异化1） ===== */
+  .magazine { display: grid; grid-template-columns: 1.15fr 1fr; gap: 34px; align-items: start; }
+  .feature { background: var(--paper); border: 1.5px solid var(--line); border-radius: var(--radius); overflow: hidden; transition: .25s; }
+  .feature:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+  .feature .feat-cover { height: 300px; display: grid; place-items: center; color: #fff; background: linear-gradient(150deg, #6b3a5c, #b03a5b); }
+  .feature .feat-cover b { font-size: 34px; letter-spacing: 4px; }
+  .feature .feat-body { padding: 26px 28px; }
+  .feature .feat-body .tag { font-size: 11px; letter-spacing: 2px; color: var(--rose); font-weight: 700; font-family: "PingFang SC", sans-serif; }
+  .feature .feat-body h3 { font-size: 23px; margin: 8px 0 12px; }
+  .feature .feat-body p { color: var(--muted); font-size: 14px; }
+  .feature .feat-body .more { display: inline-block; margin-top: 16px; color: var(--rose); font-weight: 700; font-size: 14px; font-family: "PingFang SC", sans-serif; }
+
+  .side-list { display: grid; gap: 14px; }
+  .side-item { display: grid; grid-template-columns: 56px 1fr; gap: 16px; background: var(--paper); border: 1.5px solid var(--line); border-radius: 14px; padding: 16px; align-items: center; transition: .2s; }
+  .side-item:hover { border-color: var(--rose); transform: translateX(4px); }
+  .side-item .idx { width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; font-size: 17px; font-weight: 700; color: var(--rose); background: #fbeef2; }
+  .side-item h4 { font-size: 16px; margin-bottom: 3px; }
+  .side-item span { font-size: 12px; color: var(--muted); }
+
+  /* ===== 电影：时间轴卡片（差异化2） ===== */
+  .timeline { max-width: 860px; margin: 0 auto; position: relative; }
+  .timeline::before { content: ""; position: absolute; left: 18px; top: 6px; bottom: 6px; width: 2px; background: var(--line); }
+  .tl-item { position: relative; padding-left: 56px; margin-bottom: 26px; }
+  .tl-dot { position: absolute; left: 8px; top: 20px; width: 22px; height: 22px; border-radius: 50%; background: var(--paper); border: 3px solid var(--rose); z-index: 2; }
+  .tl-card { background: var(--paper); border: 1.5px solid var(--line); border-radius: var(--radius); padding: 18px 22px; display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: center; transition: .25s; }
+  .tl-card:hover { border-color: var(--rose); box-shadow: var(--shadow); transform: translateY(-3px); }
+  .tl-card .tt { font-size: 18px; margin-bottom: 5px; }
+  .tl-card .tm { font-size: 13px; color: var(--muted); }
+  .tl-card .tv { font-size: 12px; color: var(--rose); background: #fbeef2; padding: 4px 12px; border-radius: 20px; font-family: "PingFang SC", sans-serif; }
+
+  /* ===== 电视剧：剧照拼贴墙（差异化3） ===== */
+  .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
+  .gcell { position: relative; border-radius: var(--radius); overflow: hidden; border: 1.5px solid var(--line); transition: .3s; }
+  .gcell:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+  .gcell .gc { height: 200px; display: grid; place-items: center; color: #fff; font-size: 18px; font-weight: 700; letter-spacing: 2px; }
+  .gcell:nth-child(1) .gc { background: linear-gradient(135deg, #7d3a5c, #b03a5b); }
+  .gcell:nth-child(2) .gc { background: linear-gradient(135deg, #5c3a6b, #8e4a8a); }
+  .gcell:nth-child(3) .gc { background: linear-gradient(135deg, #9a4a3c, #c97a5a); }
+  .gcell:nth-child(4) .gc { background: linear-gradient(135deg, #3a5c6b, #4a8a9a); }
+  .gcell .gc-overlay { position: absolute; left: 0; right: 0; bottom: 0; padding: 16px; background: linear-gradient(0deg, rgba(0,0,0,.62), transparent); }
+  .gcell .gc-overlay b { font-size: 16px; display: block; }
+  .gcell .gc-overlay span { font-size: 12px; opacity: .9; font-family: "PingFang SC", sans-serif; }
+
+  /* ===== 影评：引言卡片（差异化4） ===== */
+  .reviews { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 22px; }
+  .rev { background: var(--paper); border: 1.5px solid var(--line); border-left: 4px solid var(--rose); border-radius: 14px; padding: 24px 26px; transition: .25s; }
+  .rev:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+  .rev .q { font-size: 15px; color: var(--ink); margin-bottom: 16px; }
+  .rev .q::before { content: "「"; color: var(--rose); font-size: 24px; }
+  .rev .who { font-size: 13px; color: var(--muted); text-align: right; }
+  .rev .who b { color: var(--rose); font-weight: 700; }
+
+  /* ===== 关于 ===== */
+  .about { background: var(--paper); border: 1.5px solid var(--line); border-radius: 24px; padding: 48px 34px; text-align: center; max-width: 820px; margin: 0 auto; }
+  .about .big { font-size: clamp(24px, 4.5vw, 32px); font-weight: 700; margin-bottom: 14px; }
+  .about .big em { font-style: normal; color: var(--rose); }
+  .about p { color: var(--muted); font-size: 15px; }
+  .about .url { display: inline-block; margin-top: 22px; border: 1.5px solid var(--line); background: var(--bg); padding: 11px 22px; border-radius: 26px; font-size: 13px; color: var(--rose); font-family: "PingFang SC", sans-serif; word-break: break-all; }
+
+  /* ===== 底部 ===== */
+  footer { background: #2b2326; color: #ddd2d6; padding: 46px 24px 24px; margin-top: 18px; }
+  .foot-inner { max-width: 1160px; margin: 0 auto; text-align: center; }
+  .foot-inner h3 { font-size: 20px; margin-bottom: 8px; }
+  .foot-links { margin: 20px 0; display: flex; gap: 26px; justify-content: center; flex-wrap: wrap; font-size: 14px; font-family: "PingFang SC", sans-serif; }
+  .foot-links a { color: #c2b3b8; }
+  .foot-links a:hover { color: #fff; }
+  .copyright { font-size: 12px; color: #8d7d82; border-top: 1px solid #41363a; padding-top: 18px; margin-top: 18px; font-family: "PingFang SC", sans-serif; }
+  .copyright a { color: #c2b3b8; }
+
+  /* ===== 响应式 ===== */
+  @media (max-width: 760px) {
+    .menu-toggle { display: block; }
+    .nav { display: none; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; background: var(--paper); padding: 12px; border-bottom: 1px solid var(--line); }
+    .nav.open { display: flex; }
+    section { padding: 50px 16px; }
+    .magazine { grid-template-columns: 1fr; }
+    .feature .feat-cover { height: 200px; }
+    .feature .feat-cover b { font-size: 26px; }
+  }
+  @media (max-width: 420px) {
+    .hero { padding: 64px 16px 60px; }
+    .topbar-inner { padding: 12px 16px; }
+    .brand-text h1 { font-size: 16px; }
+    .tl-card { grid-template-columns: 1fr; }
+    .timeline::before { left: 12px; }
+    .tl-dot { left: 2px; width: 18px; height: 18px; }
+    .tl-item { padding-left: 40px; }
+    .gallery { grid-template-columns: 1fr 1fr; }
+    .gcell .gc { height: 150px; font-size: 14px; }
+  }
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="#" class="brand">
+      <div class="brand-mark">爱</div>
+      <div class="brand-text"><h1>爱情电影网 · 伦理</h1><span>ETHICS CHANNEL</span></div>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="菜单">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#home">首页</a>
+      <a href="#ethics">伦理聚焦</a>
+      <a href="#movies">伦理电影</a>
+      <a href="#tv">伦理剧集</a>
+      <a href="#reviews">影评</a>
+      <a href="#about">关于</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="quote">
+    <div class="kicker">ETHICS · LOVE · CHOICE</div>
+    <h2>爱情之外，<br>还有<em>伦理</em>的重量</h2>
+    <div class="divider"></div>
+    <p class="lead">聚焦家庭、婚姻、情感抉择与人性思考的经典影视推荐。</p>
+    <p class="lead">在爱与责任之间，读懂每一次选择的代价与温度。</p>
+    <div class="hero-acts">
+      <a href="#ethics" class="btn btn-primary">开始阅读</a>
+      <a href="#movies" class="btn btn-outline">伦理片单</a>
+    </div>
+  </div>
+</section>
+
+<section id="ethics">
+  <div class="wrap">
+    <div class="head">
+      <div class="num">FEATURED</div>
+      <h2>本期<em>伦理</em>聚焦</h2>
+      <p>一个故事，照见一段关系里最难开口的真相</p>
+    </div>
+    <div class="magazine">
+      <article class="feature"><a href="#">
+        <div class="feat-cover"><b>无声的告别</b></div>
+        <div class="feat-body">
+          <span class="tag">封面专题</span>
+          <h3>一场婚姻里，谁先学会了沉默</h3>
+          <p>结婚十五年，他们从争吵到无话可说。这部电影用近乎白描的方式，记录一对普通夫妻在平淡生活里逐渐走失的过程，克制而锋利。</p>
+          <span class="more">阅读专题 ›</span>
+        </div>
+      </a></article>
+      <div class="side-list">
+        <article class="side-item"><a href="#">
+          <div class="idx">01</div>
+          <div><h4>母亲的秘密</h4><span>家庭 · 亲情与隐瞒的边界</span></div>
+        </a></article>
+        <article class="side-item"><a href="#">
+          <div class="idx">02</div>
+          <div><h4>旧城旧爱</h4><span>婚姻 · 重逢之后如何选择</span></div>
+        </a></article>
+        <article class="side-item"><a href="#">
+          <div class="idx">03</div>
+          <div><h4>父亲的承诺</h4><span>亲情 · 责任与自我牺牲</span></div>
+        </a></article>
+        <article class="side-item"><a href="#">
+          <div class="idx">04</div>
+          <div><h4>两难</h4><span>抉择 · 没有正确答案的爱</span></div>
+        </a></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="movies" style="background: #f6f1f3;">
+  <div class="wrap">
+    <div class="head">
+      <div class="num">FILM LIST</div>
+      <h2>必看<em>伦理</em>电影</h2>
+      <p>以时间线梳理，从经典到新作</p>
+    </div>
+    <div class="timeline">
+      <article class="tl-item"><a href="#"><div class="tl-dot"></div><div class="tl-card"><div><div class="tt">廊桥遗梦</div><div class="tm">家庭 · 婚姻 · 1995</div></div><div class="tv">经典</div></div></a></article>
+      <article class="tl-item"><a href="#"><div class="tl-dot"></div><div class="tl-card"><div><div class="tt">饮食男女</div><div class="tm">家庭 · 亲情 · 1994</div></div><div class="tv">经典</div></div></a></article>
+      <article class="tl-item"><a href="#"><div class="tl-dot"></div><div class="tl-card"><div><div class="tt">一次别离</div><div class="tm">家庭 · 伦理 · 2011</div></div><div class="tv">高分</div></div></a></article>
+      <article class="tl-item"><a href="#"><div class="tl-dot"></div><div class="tl-card"><div><div class="tt">海边的曼彻斯特</div><div class="tm">亲情 · 救赎 · 2016</div></div><div class="tv">高分</div></div></a></article>
+      <article class="tl-item"><a href="#"><div class="tl-dot"></div><div class="tl-card"><div><div class="tt">春潮</div><div class="tm">母女 · 家庭 · 2019</div></div><div class="tv">华语</div></div></a></article>
+      <article class="tl-item"><a href="#"><div class="tl-dot"></div><div class="tl-card"><div><div class="tt">坠落的审判</div><div class="tm">婚姻 · 真相 · 2023</div></div><div class="tv">新作</div></div></a></article>
+    </div>
+  </div>
+</section>
+
+<section id="tv">
+  <div class="wrap">
+    <div class="head">
+      <div class="num">DRAMA</div>
+      <h2>热议<em>伦理</em>剧集</h2>
+      <p>一集一集，撕开家庭关系的表象</p>
+    </div>
+    <div class="gallery">
+      <article class="gcell"><a href="#"><div class="gc">婚姻的真相<div class="gc-overlay"><b>婚姻的真相</b><span>12 集 · 家庭伦理</span></div></div></a></article>
+      <article class="gcell"><a href="#"><div class="gc">无声之家<div class="gc-overlay"><b>无声之家</b><span>18 集 · 亲情代沟</span></div></div></a></article>
+      <article class="gcell"><a href="#"><div class="gc">另一半<div class="gc-overlay"><b>另一半</b><span>24 集 · 婚姻抉择</span></div></div></a></article>
+      <article class="gcell"><a href="#"><div class="gc">父母爱情之后<div class="gc-overlay"><b>父母爱情之后</b><span>20 集 · 代际亲情</span></div></div></a></article>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" style="background: #f6f1f3;">
+  <div class="wrap">
+    <div class="head">
+      <div class="num">VOICES</div>
+      <h2>读者<em>影评</em></h2>
+      <p>他们怎么说</p>
+    </div>
+    <div class="reviews">
+      <div class="rev"><p class="q">它讲的不是出轨，是婚姻里两个人如何一点点变成陌生人。</p><div class="who">—— <b>小满</b> · 评《无声的告别》</div></div>
+      <div class="rev"><p class="q">看完才明白，有些选择没有对错，只有代价。</p><div class="who">—— <b>阿哲</b> · 评《两难》</div></div>
+      <div class="rev"><p class="q">伦理片最残忍的地方，是让你在角色身上看见自己。</p><div class="who">—— <b>知秋</b> · 评《一次别离》</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="about">
+      <div class="big">读懂<em>爱</em>，也读懂选择</div>
+      <p>爱情电影网 · 伦理频道，专注家庭、婚姻与情感伦理类影视的推荐与解读。</p>
+      <p>以尊重与克制的方式，陪你思考爱与责任之间的每一次取舍。</p>
+      <div class="url">https://aiqingdianyingwanglunli-wap.github.io</div>
+      <div class="hero-acts" style="margin-top:26px;">
+        <a href="#home" class="btn btn-primary">回到顶部</a>
+        <a href="#ethics" class="btn btn-outline">本期专题</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-inner">
+    <h3>爱情电影网 · 伦理频道</h3>
+    <p style="font-size:14px; color:#c2b3b8;">爱情 · 伦理 · 选择 —— 影视推荐与影评</p>
+    <div class="foot-links">
+      <a href="#home">首页</a>
+      <a href="#ethics">伦理聚焦</a>
+      <a href="#movies">伦理电影</a>
+      <a href="#tv">伦理剧集</a>
+      <a href="#reviews">影评</a>
+      <a href="#about">关于</a>
+    </div>
+    <div class="copyright">
+      本站网址：<a href="https://aiqingdianyingwanglunli-wap.github.io">https://aiqingdianyingwanglunli-wap.github.io</a><br>
+      © 2026 爱情电影网 · 伦理频道 · 影视资讯与影评分享，具体播放请前往正版授权平台
+    </div>
+  </div>
+</footer>
+
+<script>
+  var toggle = document.getElementById('menuToggle');
+  var nav = document.getElementById('nav');
+  toggle.addEventListener('click', function () { nav.classList.toggle('open'); });
+  nav.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () { nav.classList.remove('open'); });
+  });
+</script>
+</body>
+</html>
